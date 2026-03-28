@@ -1,6 +1,13 @@
 import dotenv from "dotenv";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+dotenv.config({
+  path: path.resolve(__dirname, "../../.env"),
+});
 
 function required(name, fallback = "") {
   return process.env[name] || fallback;
@@ -17,5 +24,5 @@ export const env = {
   publicApiBaseUrl: required("PUBLIC_API_BASE_URL", "http://localhost:4000"),
   paymentMode: required("PAYMENT_MODE", "mock").toLowerCase(),
   sslStoreId: process.env.SSL_STORE_ID || "",
-  sslStorePassword: process.env.SSL_STORE_PASSWORD || ""
+  sslStorePassword: process.env.SSL_STORE_PASSWORD || "",
 };
