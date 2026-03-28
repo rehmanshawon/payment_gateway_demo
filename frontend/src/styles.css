@@ -268,6 +268,10 @@ button {
   margin: 1.5rem 0 2rem;
 }
 
+.payments-showcase {
+  margin: 0 0 2rem;
+}
+
 .gateway-card {
   padding: 1rem;
 }
@@ -275,6 +279,80 @@ button {
 .gateway-card strong {
   display: block;
   margin-bottom: 0.3rem;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.logo-card {
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem;
+  padding: 1.1rem 0.8rem;
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(17, 33, 48, 0.08);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.logo-card strong {
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.logo-badge {
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20px;
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 14px 30px rgba(17, 33, 48, 0.14);
+}
+
+.logo-badge.bkash {
+  background: linear-gradient(135deg, #e2136e, #ff5da2);
+}
+
+.logo-badge.nagad {
+  background: linear-gradient(135deg, #ef5a24, #ff8a3d);
+}
+
+.logo-badge.rocket {
+  background: linear-gradient(135deg, #8b1fa9, #c948ec);
+}
+
+.logo-badge.upay {
+  background: linear-gradient(135deg, #f26522, #ffb067);
+}
+
+.logo-badge.visa {
+  background: linear-gradient(135deg, #123cbd, #2b73ff);
+}
+
+.logo-badge.mastercard {
+  background: linear-gradient(135deg, #ea001b, #ff9f1c);
+}
+
+.logo-badge.amex {
+  background: linear-gradient(135deg, #0070c9, #3cb9ff);
+}
+
+.logo-badge.unionpay {
+  background: linear-gradient(135deg, #d91f26, #1e57d8);
+}
+
+.logo-badge.nexus {
+  background: linear-gradient(135deg, #0f766e, #1fb6aa);
+}
+
+.logo-badge.qcash {
+  background: linear-gradient(135deg, #0f4a8a, #20a4f3);
 }
 
 .section-head {
@@ -486,6 +564,10 @@ button {
   .product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .logo-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
@@ -499,6 +581,7 @@ button {
   .gateway-options,
   .hero-panel,
   .gateway-strip,
+  .logo-grid,
   .product-grid,
   .cart-layout,
   .checkout-layout {

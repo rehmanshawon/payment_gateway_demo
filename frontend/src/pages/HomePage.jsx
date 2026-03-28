@@ -13,6 +13,19 @@ const gatewayHighlights = [
   { title: "Upay & Nexus", note: "Expanded local coverage" }
 ];
 
+const supportedPaymentMethods = [
+  { name: "bKash", short: "bK", tone: "bkash" },
+  { name: "Nagad", short: "Ng", tone: "nagad" },
+  { name: "Rocket", short: "Rk", tone: "rocket" },
+  { name: "Upay", short: "Up", tone: "upay" },
+  { name: "Visa", short: "Vi", tone: "visa" },
+  { name: "Mastercard", short: "MC", tone: "mastercard" },
+  { name: "AMEX", short: "Ax", tone: "amex" },
+  { name: "UnionPay", short: "UP", tone: "unionpay" },
+  { name: "DBBL Nexus", short: "Nx", tone: "nexus" },
+  { name: "Q Cash", short: "Qc", tone: "qcash" }
+];
+
 export function HomePage() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -76,6 +89,24 @@ export function HomePage() {
             <span>{gateway.note}</span>
           </article>
         ))}
+      </section>
+
+      <section className="payments-showcase">
+        <div className="section-head compact">
+          <div>
+            <p className="eyebrow">Supported payment methods</p>
+            <h2>Show clients the wallet and card coverage they expect from SSLCommerz</h2>
+          </div>
+        </div>
+
+        <div className="logo-grid">
+          {supportedPaymentMethods.map((method) => (
+            <article key={method.name} className="logo-card">
+              <div className={`logo-badge ${method.tone}`}>{method.short}</div>
+              <strong>{method.name}</strong>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="section-head" id="products">
