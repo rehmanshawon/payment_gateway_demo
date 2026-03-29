@@ -268,6 +268,25 @@ button {
   margin: 1.5rem 0 2rem;
 }
 
+.payments-showcase {
+  margin: 0 0 2rem;
+}
+
+.ssl-banner-card {
+  display: block;
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(17, 33, 48, 0.08);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.ssl-banner-card img {
+  display: block;
+  width: min(100%, 520px);
+  height: auto;
+}
+
 .gateway-card {
   padding: 1rem;
 }

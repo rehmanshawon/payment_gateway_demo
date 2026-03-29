@@ -78,6 +78,28 @@ export function HomePage() {
         ))}
       </section>
 
+      <section className="payments-showcase">
+        <div className="section-head compact">
+          <div>
+            <p className="eyebrow">SSLCommerz hosted checkout</p>
+            <h2>Customers choose their payment channel on the official SSLCommerz payment page</h2>
+          </div>
+        </div>
+
+        <a
+          className="ssl-banner-card"
+          href="https://www.sslcommerz.com/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="SSLCommerz official website"
+        >
+          <img
+            src="https://securepay.sslcommerz.com/public/image/SSLCommerz-Pay-With-logo-All-Size-05.png"
+            alt="Pay with SSLCommerz"
+          />
+        </a>
+      </section>
+
       <section className="section-head" id="products">
         <div>
           <p className="eyebrow">Featured products</p>
