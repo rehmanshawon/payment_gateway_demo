@@ -243,7 +243,6 @@ button {
 }
 
 .hero-card p,
-.gateway-card span,
 .product-meta p,
 .cart-row p,
 .status-card p,
@@ -261,20 +260,13 @@ button {
   gap: 0.6rem;
 }
 
-.gateway-strip {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0 2rem;
-}
-
 .payments-showcase {
-  margin: 0 0 2rem;
+  margin: 1.5rem 0 2rem;
 }
 
 .ssl-banner-card {
   display: block;
-  padding: 1.2rem;
+  padding: 1.8rem;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(17, 33, 48, 0.08);
   border-radius: 28px;
@@ -283,17 +275,8 @@ button {
 
 .ssl-banner-card img {
   display: block;
-  width: min(100%, 520px);
+  width: min(100%, 760px);
   height: auto;
-}
-
-.gateway-card {
-  padding: 1rem;
-}
-
-.gateway-card strong {
-  display: block;
-  margin-bottom: 0.3rem;
 }
 
 .section-head {
@@ -497,8 +480,7 @@ button {
   .hero-panel,
   .cart-layout,
   .checkout-layout,
-  .product-grid,
-  .gateway-strip {
+  .product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -517,7 +499,6 @@ button {
   .form-grid,
   .gateway-options,
   .hero-panel,
-  .gateway-strip,
   .product-grid,
   .cart-layout,
   .checkout-layout {

@@ -4,15 +4,6 @@ import { api } from "../lib/api.js";
 import { formatCurrency } from "../lib/currency.js";
 import { useCart } from "../context/CartContext.jsx";
 
-const gatewayHighlights = [
-  { title: "bKash", note: "Popular mobile wallet" },
-  { title: "Nagad", note: "Fast checkout option" },
-  { title: "Rocket", note: "DBBL mobile banking" },
-  { title: "Visa & Mastercard", note: "Debit and credit cards" },
-  { title: "AMEX & UnionPay", note: "International card support" },
-  { title: "Upay & Nexus", note: "Expanded local coverage" }
-];
-
 export function HomePage() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -67,15 +58,6 @@ export function HomePage() {
             <li>MySQL order tracking</li>
           </ul>
         </div>
-      </section>
-
-      <section className="gateway-strip">
-        {gatewayHighlights.map((gateway) => (
-          <article key={gateway.title} className="gateway-card">
-            <strong>{gateway.title}</strong>
-            <span>{gateway.note}</span>
-          </article>
-        ))}
       </section>
 
       <section className="payments-showcase">
