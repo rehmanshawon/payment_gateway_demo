@@ -99,6 +99,19 @@ export function HomePage() {
           </div>
         </div>
 
+        <a
+          className="ssl-banner-card"
+          href="https://www.sslcommerz.com/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="SSLCommerz official website"
+        >
+          <img
+            src="https://securepay.sslcommerz.com/public/image/SSLCommerz-Pay-With-logo-All-Size-05.png"
+            alt="Pay with SSLCommerz"
+          />
+        </a>
+
         <div className="logo-grid">
           {supportedPaymentMethods.map((method) => (
             <article key={method.name} className="logo-card">
