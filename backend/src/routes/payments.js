@@ -61,6 +61,11 @@ function buildInitiatePayload(order) {
     cus_postcode: order.customer_postcode,
     cus_country: order.customer_country,
     cus_phone: order.customer_phone,
+    ship_name: order.customer_name,
+    ship_add1: order.customer_address,
+    ship_city: order.customer_city,
+    ship_postcode: order.customer_postcode,
+    ship_country: order.customer_country,
     multi_card_name: checkoutGatewayCode,
     value_a: String(order.id)
   });
